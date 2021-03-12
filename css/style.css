@@ -1,0 +1,230 @@
+/*
+Raleway 700 лого
+Roboto 500 нав, имена в команде, 
+Roboto 900 Н1
+Roboto 700 кнопка, Н3, н2
+Roboto 400 текст, футер
+
+
+текст нав, н2 преимущества, н2, имена: #212121
+брендовый цвет: #2196F3
+текст телефона, текст абзацев, позиция: #757575;
+цвет н1 background: #FFFFFF;
+фон героя 2F303A
+цвет наша команда background: #F5F4FA;
+цвет футера background: #2F303A;
+цвет адреса color: #FFFFFF;
+цвет телефона и почты в футере color: rgba(255, 255, 255, 0.6)
+
+
+*/
+/*объявление переменных*/
+:root {
+  --logo-dark-color: #000000;
+  --logo-color: #2196f3;
+  --title-color: #212121;
+  --text-color: #757575;
+  --main-bg-color: #ffffff;
+  --dark-bg-color: #2f303a;
+  --light-bg-color: #f5f4fa;
+  --main-font: Roboto, sans-serif;
+  --second-font: Raleway, sans-serif;
+  --button-hover-color: #188ce8;
+  --portfolio-bg-color: #e5e5e5;
+}
+
+/*основные настройки для страницы*/
+.main-page,
+.portfolio {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*убирает маркер у списки */
+.list {
+  list-style-type: none;
+}
+
+/*убирает подчеркивание у ссылки*/
+.link {
+  text-decoration: none;
+}
+
+/*форматирование логотипа*/
+.logo {
+  text-decoration: none;
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.web {
+  color: var(--logo-color);
+}
+
+header .studio {
+  color: var(--logo-dark-color);
+}
+
+/*форматирование навигации в хэдере*/
+.nav-item {
+  color: var(--title-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-item:hover,
+.nav-item:focus,
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--logo-color);
+}
+
+.contact-item {
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/*стили для секции героя+фон для футера*/
+.hero,
+.footer {
+  background-color: var(--dark-bg-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+/*Стиль для кнопки Заказать услуги*/
+.button-order {
+  background-color: var(--logo-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-bg-color);
+  cursor: pointer;
+}
+
+.button-order:hover,
+.button-order:focus {
+  background-color: var(--button-hover-color);
+}
+
+/*прячет заголовок секции*/
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/*Стили для секции Особенности*/
+.feature-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+/*Стили для секции Чем мы занимаемся*/
+
+/*Стили для заголовков секций Чем мы занимаемся и Наша Команда*/
+.work-title,
+.command-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-color);
+}
+
+/*Стили для секции Наша команда*/
+.command {
+  background-color: var(--light-bg-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.command-item {
+  background-color: var(--main-bg-color);
+}
+
+.command-name {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--title-color);
+}
+
+/*Стили для секции кнопок в Портфолио*/
+.button-filter {
+  background-color: var(--light-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-filter:focus,
+.button-filter:hover {
+  background-color: var(--logo-color);
+  color: var(--main-bg-color);
+}
+/*Стили для секции проекты*/
+.project {
+  background-color: var(--portfolio-bg-color);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-color);
+}
+
+/*Стили для футера*/
+.adress {
+  font-style: normal;
+}
+
+.footer .studio,
+.adress-name {
+  color: var(--main-bg-color);
+}
+
+.adress-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+.adress-item:hover,
+.adress-item:focus {
+  color: var(--logo-color);
+}
